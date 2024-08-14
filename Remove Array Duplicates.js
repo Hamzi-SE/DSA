@@ -11,4 +11,27 @@ for (let i = 0; i < arr.length; i++) {
     }
 }
 
-console.log(arr);
+console.log(arr);    // Time complexity: O(n^2)
+
+
+//==================//
+
+function removeDuplicates(arr) {
+    const seen = {};
+    const result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        const current = arr[i];
+        
+        if (!seen[current]) {
+            result.push(current);  // Add to result if not seen before
+            seen[current] = true;  // Mark the element as seen
+        }
+    }
+
+    return result;
+}
+
+const uniqueArr = removeDuplicates(arr);
+
+console.log(uniqueArr);    // Time complexity: O(n)
