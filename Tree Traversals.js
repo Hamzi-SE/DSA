@@ -48,14 +48,18 @@ const tree = {
 // function postOrderTraversal(node) {
 //   if (node === undefined) return
 
+//   console.log(node.value)  // pre-order
+
 //   // First, visit the left subtree
 //   postOrderTraversal(node.left)
+
+//   console.log(node.value)  // in-order
 
 //   // Then, visit the right subtree
 //   postOrderTraversal(node.right)
 
 //   // Finally, visit the root (current node)
-//   console.log(node.value)
+//   console.log(node.value)  // post-order
 // }
 
 // postOrderTraversal(tree)    // Output: 4 5 2 6 3 1
